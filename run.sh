@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Use below Command when Coding in Crio Workspace. Add comment for below command during code submission on Geektrust Platform
+#./gradlew clean build -x test --no-daemon
+
+# Remove the below comment during code submission on Geektrust Platform
+gradle clean build -x test --no-daemon
+
+java -jar build/libs/geektrust.jar sample_input/input1.txt
+java -jar build/libs/geektrust.jar sample_input/input2.txt
+java -jar build/libs/geektrust.jar sample_input/input3.txt
+java -jar build/libs/geektrust.jar sample_input/input4.txt
+java -jar build/libs/geektrust.jar sample_input/input5.txt
+
+# gradle run -q --args="INPUT_FILE=sample_input/input1.txt"
+# gradle run -q --args="INPUT_FILE=sample_input/input2.txt"
+# ./gradlew run -q --args="INPUT_FILE=sample_input/input3.txt"
+# ./gradlew run -q --args="INPUT_FILE=sample_input/input4.txt"
+# ./gradlew run -q --args="INPUT_FILE=sample_input/input5.txt"
